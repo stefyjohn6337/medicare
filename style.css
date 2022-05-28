@@ -1,0 +1,43 @@
+*{ margin:0px; box-sizing:border-box; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.container{ max-width:1024px; margin:0px auto;}
+.row{ display:flex; flex-wrap:wrap;}
+.d-flex{ display:flex; justify-content:space-between;}
+.align-items-center{ align-items:center;}
+.pos{ position:relative;}
+
+/*-----------Start header------*/
+header{ padding:20px 0px; background-color:antiquewhite; position:sticky; top:0%;}
+
+nav{width:65%;}
+nav ul{ list-style:none; display:flex;}
+nav ul li{ padding:15px 0px;}
+/*nav ul li a:visited::after{content:""; display:block; width:100px; height:4px; background-color:#E10F28;} */
+nav ul li ul{ display:none;}
+nav ul li:hover ul{ display:block; position:absolute; width:150px; top:100%; padding:0px; border-top:4px solid #E10F28;}
+nav ul li a{ display:block; padding:0px 10px; text-decoration:none; color:#444444; font-size:14px;  }
+nav ul li:hover a{ color:#E10F28;}
+
+.fa-brands{ width:25px; color:#E10F28; font-size:14px; }
+
+/*--------End Header--------*/
+
+/*--------Slider------------*/
+.content{width:50%; height:100%; padding-top:100px;}
+
+/*-------Slider 1--------*/
+
+.slider-1{ background:url("..//images/bg-01.jpg") border-box; height:120vh; background-size:cover;  }
+
+.slider-1 .p1{ font-size: 25px;  margin-bottom:20px;}
+.slider-1 .p1:after{ content:""; display:block; width:100px; height:2px; background-color: #E10F28; margin:15px 0px; }
+.slider-1 .p2{ font-size:70px; font-weight:bold; color:#E10F28;  margin-bottom:10px;}
+.slider-1 .p3{ font-size:70px;  margin-bottom:10px;}
+.slider-1 .p4{ font-size: 18px; line-height:1.55em;  margin-bottom:10px;}
+
+button{ padding:15px 40px; border:none; border-radius:30px; margin-right:20px; margin-top:10px; color:white;}
+.btn-1{ background-color:#E10F28;}
+.btn-2{ background-color:#282828;}
+
+/*-------Slider 2--------*/
+
+.slider-2{ background:url("..//images/bg-02.jpg") border-box; height:120vh; background-size:cover;}

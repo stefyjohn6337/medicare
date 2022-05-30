@@ -1,7 +1,8 @@
 *{ margin:0px; box-sizing:border-box; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
-.container{ max-width:1024px; margin:0px auto;}
-.row{ display:flex; flex-wrap:wrap;}
-.d-flex{ display:flex; justify-content:space-between;}
+.container{ max-width:1100px; margin:0px auto;}
+.row{ display:flex; flex-wrap: wrap;}
+.d-flex{ display:flex;}
+.flex-dir-col{ flex-direction:column;}
 .align-items-center{ align-items:center;}
 .pos{ position:relative;}
 
@@ -13,7 +14,7 @@ nav ul{ list-style:none; display:flex;}
 nav ul li{ padding:15px 0px;}
 /*nav ul li a:visited::after{content:""; display:block; width:100px; height:4px; background-color:#E10F28;} */
 nav ul li ul{ display:none;}
-nav ul li:hover ul{ display:block; position:absolute; width:150px; top:100%; padding:0px; border-top:4px solid #E10F28;}
+nav ul li:hover ul{ display:block; position:absolute; width:150px; top:100%; padding:0px; border-top:4px solid #E10F28; z-index:5;}
 nav ul li a{ display:block; padding:0px 10px; text-decoration:none; color:#444444; font-size:14px;  }
 nav ul li:hover a{ color:#E10F28;}
 
@@ -26,7 +27,7 @@ nav ul li:hover a{ color:#E10F28;}
 
 /*-------Slider 1--------*/
 
-.slider-1{ background:url("..//images/bg-01.jpg") border-box; height:120vh; background-size:cover;  }
+.slider-1{ background:url("..//images/bg-01.jpg") border-box; height:120vh; background-size:cover; z-index:-1; }
 
 .slider-1 .p1{ font-size: 25px;  margin-bottom:20px;}
 .slider-1 .p1:after{ content:""; display:block; width:100px; height:2px; background-color: #E10F28; margin:15px 0px; }
@@ -40,4 +41,39 @@ button{ padding:15px 40px; border:none; border-radius:30px; margin-right:20px; m
 
 /*-------Slider 2--------*/
 
-.slider-2{ background:url("..//images/bg-02.jpg") border-box; height:120vh; background-size:cover;}
+.slider-2{ background:url("..//images/bg-02.jpg") border-box; height:120vh; background-size:cover; z-index: -1;}
+
+/*------ box card------*/
+.color1{ background:rgba(235, 29, 53, 1); border:none;}
+.color2{ background:rgba(225, 15, 40, 1); border:none;}
+.color3{ background:rgba(209, 11, 34, 1); border:none;}
+.color4{ background: #444444;}
+
+.contact{ color:white;}
+.contact .card-body{ padding:20px; }
+
+.contact .col-3{ width:25%; }
+.contact .col-3 img{ width:100%;}
+.contact .p1{ font-size:16px; margin:15px 0px;} 
+.contact .p2{ font-size:25px; margin:15px 0px;}
+.contact .p3{ font-size:12px; line-height:1.55; margin:12px 0px;}
+.contact button{color:black;}
+.contact .lt .card-body{ padding:30px 15px;}
+
+.contact .fa-solid{ color:#E10F28; font-size:20px; vertical-align: center; padding-right:10px;}
+.contact .lt p{ padding-bottom:5px;  }
+.contact .lt p b{ font-size: 18px;}
+.contact .lt div{ padding-bottom:20px;}
+/*-------- box end-------*/
+
+/*----------introduction--------*/
+.introduction{ background:url("..//images/bg-team-members.jpg"); height:170vh; background-position: -270px;}
+.introduction .content{  margin-left:30%; padding:20% 5%;}
+
+
+
+.introduction .p1{ font-size: 25px;  margin-bottom:20px;}
+.introduction .p1:after{ content:""; display:block; width:100px; height:2px; background-color: #E10F28; margin:15px 0px; }
+.introduction .p2{ font-size:70px; font-weight:bold; color:#E10F28;  margin-bottom:10px;}
+.introduction .p3{ font-size:70px;  margin-bottom:10px;}
+.introduction .p4{ font-size: 18px; line-height:1.55em;  margin-bottom:10px;}

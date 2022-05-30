@@ -1,47 +1,69 @@
 *{ margin:0px; box-sizing:border-box; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
-.container{ max-width:1100px; margin:0px auto;}
-.row{ display:flex; flex-wrap: wrap;}
-.d-flex{ display:flex;}
-.flex-dir-col{ flex-direction:column;}
+.container{ max-width:70%; margin:0px auto;}
+.row{ display:flex; flex-wrap:wrap;}
+.d-flex{ display:flex; 
+    /* justify-content:space-between; */
+}
 .align-items-center{ align-items:center;}
 .pos{ position:relative;}
+button{ padding:15px 40px; border:none; border-radius:30px; margin-right:20px; margin-top:10px; color:white;}
+
+
+
+.p1{ font-size: 25px;  margin-bottom:20px; color:#444444; position:relative;}
+.p1:after{ content:""; display:block; width:100px; height:2px; background-color: #E10F28; position:absolute; top:150%;}
+.p2{ font-size:70px; font-weight:bold; color:#E10F28;  margin-bottom:10px;}
+.p3{ font-size:70px;  margin-bottom:10px; color:#444444;}
+.p4{ font-size: 18px; line-height:1.55em;  margin-bottom:10px; color:#444444;}
+
+
 
 /*-----------Start header------*/
-header{ padding:20px 0px; background-color:antiquewhite; position:sticky; top:0%;}
-
-nav{width:65%;}
-nav ul{ list-style:none; display:flex;}
+header{ padding:20px 0px; position:sticky; top:0%; z-index: 10; background-color: white; }
+header .container{ z-index: 5;} 
+nav{width:65%; }
+nav ul{ list-style:none; display:flex; }
 nav ul li{ padding:15px 0px;}
-/*nav ul li a:visited::after{content:""; display:block; width:100px; height:4px; background-color:#E10F28;} */
-nav ul li ul{ display:none;}
-nav ul li:hover ul{ display:block; position:absolute; width:150px; top:100%; padding:0px; border-top:4px solid #E10F28; z-index:5;}
+ /*nav ul li a:visited::after{content:""; display:block; width:100px; height:4px; background-color:#E10F28;} */
+nav ul li ul{ display:none; }
+nav ul li:hover ul{ display:block; position:absolute; width:200px; top:100%; padding:0px; border-top:4px solid #E10F28;
+background-color: antiquewhite;}
+nav ul li ul li a{ font-size:14px;}
 nav ul li a{ display:block; padding:0px 10px; text-decoration:none; color:#444444; font-size:14px;  }
-nav ul li:hover a{ color:#E10F28;}
+nav ul li:hover > a{ color:#E10F28;}
 
 .fa-brands{ width:25px; color:#E10F28; font-size:14px; }
 
 /*--------End Header--------*/
 
+
+
+
+
 /*--------Slider------------*/
-.content{width:50%; height:100%; padding-top:100px;}
+
+.content{width:50%; height:100%; padding-top:200px; }
 
 /*-------Slider 1--------*/
 
-.slider-1{ background:url("..//images/bg-01.jpg") border-box; height:120vh; background-size:cover; z-index:-1; }
-
-.slider-1 .p1{ font-size: 25px;  margin-bottom:20px;}
-.slider-1 .p1:after{ content:""; display:block; width:100px; height:2px; background-color: #E10F28; margin:15px 0px; }
-.slider-1 .p2{ font-size:70px; font-weight:bold; color:#E10F28;  margin-bottom:10px;}
-.slider-1 .p3{ font-size:70px;  margin-bottom:10px;}
-.slider-1 .p4{ font-size: 18px; line-height:1.55em;  margin-bottom:10px;}
-
-button{ padding:15px 40px; border:none; border-radius:30px; margin-right:20px; margin-top:10px; color:white;}
-.btn-1{ background-color:#E10F28;}
-.btn-2{ background-color:#282828;}
+.slider-1{ background:url("..//images/bg-01.jpg") border-box; height:120vh; background-size:cover; z-index: -1;}
 
 /*-------Slider 2--------*/
 
 .slider-2{ background:url("..//images/bg-02.jpg") border-box; height:120vh; background-size:cover; z-index: -1;}
+
+/*-----------content--------*/
+
+.btn-1{ background-color:#E10F28;}
+.btn-2{ background-color:#282828;}
+
+/*------------- dots-------*/
+.owl-dots{ position:absolute; bottom:40px; left:50%; transform:translate(-50%, 0%) ; } 
+.owl-prev{ position:absolute;  left:0%; top:50%; height:70px; width:40px;} 
+.owl-next{ position:absolute; right:0%; top:50%; height:70px; width:40px;}
+
+/*------------- slider end-----*/
+
 
 /*------ box card------*/
 .color1{ background:rgba(235, 29, 53, 1); border:none;}
@@ -49,31 +71,67 @@ button{ padding:15px 40px; border:none; border-radius:30px; margin-right:20px; m
 .color3{ background:rgba(209, 11, 34, 1); border:none;}
 .color4{ background: #444444;}
 
-.contact{ color:white;}
+.contact{ color: white ;}
 .contact .card-body{ padding:20px; }
 
 .contact .col-3{ width:25%; }
 .contact .col-3 img{ width:100%;}
-.contact .p1{ font-size:16px; margin:15px 0px;} 
-.contact .p2{ font-size:25px; margin:15px 0px;}
-.contact .p3{ font-size:12px; line-height:1.55; margin:12px 0px;}
+.contact .p1{ font-size:16px; margin:15px 0px; color: white ;} 
+.contact .p1::after{ background-color:#444444;}
+.contact .p2{ font-size:25px; margin:15px 0px; color: white ;}
+.contact .p3{ font-size:12px; line-height:1.55; margin:12px 0px;color: #f1f1f1 ;}
 .contact button{color:black;}
+
 .contact .lt .card-body{ padding:30px 15px;}
 
-.contact .fa-solid{ color:#E10F28; font-size:20px; vertical-align: center; padding-right:10px;}
+.contact .fa-solid{ color:#E10F28; font-size:30px; margin-top:10px;; padding-right:10px;}
+.contact .fa-solid:hover{ color:#f1f1f1;}
+.contact .card-body .p1:after{ color: #282828!important;}
 .contact .lt p{ padding-bottom:5px;  }
 .contact .lt p b{ font-size: 18px;}
 .contact .lt div{ padding-bottom:20px;}
 /*-------- box end-------*/
 
 /*----------introduction--------*/
-.introduction{ background:url("..//images/bg-team-members.jpg"); height:170vh; background-position: -270px;}
-.introduction .content{  margin-left:30%; padding:20% 5%;}
+.introduction{ background:url("..//images/bg-team-members.jpg"); background-size:cover; background-repeat:no-repeat; height:100vh; background-position: center;}
+.introduction .content{ margin-left:10%; width:82%; }
+
+.introduction .p4{  width:600px;} 
+
+.introduction div{ justify-content:flex-end;}
+.introduction img{ margin:0px 15px;}
+.introduction .sign p{ color:#E10F28;}
+.introduction p:last-child{ margin:10px 0px; font-size:14px; color:#444444;}
+
+
+/*-----------------  Consultation--------*/
+.consult{ margin-top:150px; }
+.col{ width:70%; padding:20px 0px;}
+.col:last-child{ border: 10px solid #f1f1f1; width:30%; padding:40px;}
 
 
 
-.introduction .p1{ font-size: 25px;  margin-bottom:20px;}
-.introduction .p1:after{ content:""; display:block; width:100px; height:2px; background-color: #E10F28; margin:15px 0px; }
-.introduction .p2{ font-size:70px; font-weight:bold; color:#E10F28;  margin-bottom:10px;}
-.introduction .p3{ font-size:70px;  margin-bottom:10px;}
-.introduction .p4{ font-size: 18px; line-height:1.55em;  margin-bottom:10px;}
+
+
+.consult .col:last-child .p1{ font-size: 16px;  margin-bottom:20px; color:#444444;}
+.consult .col:last-child .p1:after{ content:""; display:block; width:100px; height:2px; background-color: #E10F28; margin:10px 0px; }
+.consult .col:last-child .p2{ font-size:20px; font-weight:bold; color:#E10F28;  margin-bottom:0px;}
+.consult .col:last-child .p4{ font-size: 13px; line-height:1.7;  margin-bottom:0px; color:#444444; } 
+
+
+.consult select{ width:100%; background-color: #f1f1f1; margin:20px; outline: none; padding: 10px 20px; color:#282828; height:50px; border: none; border-radius:50px;}
+.consult select:focus{ border:2px solid #E10F28; }
+
+
+/*---------operation------*/
+.operation{ margin:50px;}
+.col-4{ width:33.33%; text-align:center; padding:15px; border-left:0.5px solid #dddddd; }
+.operation .col-4:first-child{ border-left:none;}
+.operation .fa-solid{ font-size: 70px; color:#E10F28;}
+.operation .p1:after{ top:120%; left:50%; transform: translate(-50%,0%);}
+
+/*------operation end-----*/
+
+/*-----------subscribe start-----------*/
+.subscribe{ background:url("..//images/bg-newsletter-subscribe.jpg"); background-size:cover; height:80vh; position:relative;}
+.subscribe .sub-content{ width:60%; position:absolute; top:20%;}
